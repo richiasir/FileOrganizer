@@ -1,5 +1,3 @@
-```
-markdown
 # Advanced File Organizer & Sorter
 
 A robust Python utility designed to automatically sort all files within a specific directory into subfolders based on their file extension. The tool ensures data integrity by generating unique random names for every file before moving it.
@@ -28,10 +26,9 @@ No external libraries are required. This script relies solely on Python's standa
 1. Clone or download the script (e.g., `file_organizer.py`) to your machine.
 2. Open a terminal or command prompt.
 3. Run the script using Python:
-```
 
-bash python file_organizer.py
-
+```bash
+python file_organizer.py
 ```
 
 > **Note**: Ensure you have write permissions for the directory you intend to organize.
@@ -41,10 +38,9 @@ bash python file_organizer.py
 ### Step-by-Step Execution
 
 1. **Launch the Script**:
-```
 
-bash   python file_organizer.py   
-
+```bash
+python file_organizer.py
 ```
 
 2. **Enter Directory Path**:
@@ -62,16 +58,15 @@ bash   python file_organizer.py
 
 ### Example Output
 
-If your input directory contains:
-- `report.pdf`
-- `image.jpg`
-- `data.csv`
+If your input directory contains `report.pdf`, `image.jpg`, and `data.csv`, the script will produce:
 
-The script will create:
 ```
-
-text 📁 .pdf/   📄 aB9x2.pdf 📁 .jpg/   📄 kL4m1.jpg 📁 .csv/   📄 pQ7r8.csv
-
+📁 .pdf/
+   📄 aB9x2.pdf
+📁 .jpg/
+   📄 kL4m1.jpg
+📁 .csv/
+   📄 pQ7r8.csv
 ```
 
 ## 🔒 Safety & Security Measures
@@ -95,8 +90,8 @@ This script includes multiple layers of protection to prevent accidental data lo
 |-------|----------------|----------|
 | `PermissionError` | Lack of read/write access | Run terminal with administrator/root privileges. |
 | Script refuses to start | Invalid Python environment | Ensure you have an active Python 3 installation. |
-| Files not sorted correctly | Mixed extension formats | The script handles both `file.ext` and `file`.ext inputs uniformly. |
-| Recursion Loop Detected | Script included its own logic incorrectly | Check the "Self-Protection" section; ensure filenames don't contain common triggers like 'sorter'. |
+| Files not sorted correctly | Mixed extension formats | The script handles both `file.ext` and `.ext` inputs uniformly. |
+| Recursion Loop Detected | Script included its own logic incorrectly | Check the "Self-Protection" section; ensure filenames don't contain common triggers like `sorter`. |
 
 ## 📄 License
 
@@ -105,4 +100,3 @@ This project is open-source and free to use for personal and commercial purposes
 ---
 
 *Developed for efficient digital organization.*
-```
